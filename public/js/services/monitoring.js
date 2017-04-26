@@ -7,8 +7,11 @@ angular.module('monitoringService', [])
 			get : function() {
 				return $http.get('/api/services');
 			},
-			create : function(todoData) {
+			create : function(serviceData) {
 				return $http.post('/api/services', serviceData);
+			},
+			status : function() {
+				return $http.get('/api/services/status');
 			}
 		}
 	}]);

@@ -58,6 +58,12 @@
 		  </tbody>
 		</table>
 
+	<button id="newServiceButton" class="btn-primary" ng-click="displayForm=true">New Service</button>
+
+	<form id="newServiceForm" ng-show="displayForm">
+		<textarea class="form-control" rows="5" id="comment" ng-model="formData.text"></textarea>
+		<button type="submit" class="btn-primary" ng-click="createService(); displayForm=false">Submit</button>
+	</form>
 
 
 </body>

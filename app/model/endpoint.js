@@ -3,7 +3,7 @@ var http = require("http");
 var option = require('./option.js');
 
 var endpointSchema = mongoose.Schema({
-    option: [option.schema],
+    option: option.schema,
     name: String,
     status: {}
 });
